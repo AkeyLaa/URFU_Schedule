@@ -1,0 +1,1135 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032529137BC682CBBBC7A4F4CB814397 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC75943F43986C888E3E87AB01A5E4 /* Attributes.swift */; };
+		0799CF52A1461A5E411AA5289A1AC96E /* StructuralEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE46F62CDC83FCC78C9EBD7E7B07B8 /* StructuralEvaluator.swift */; };
+		09A4671AF316CC42AA3972843F23D701 /* HtmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F5A87FE261C06AB5F5BB0DD60D2B0 /* HtmlTreeBuilder.swift */; };
+		0C294CB828B9748D6B4C5ACA0AAF4980 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021ADEC4D67A92B969DBE38CFDAF37CB /* Exception.swift */; };
+		0D4B45F9705D946C5E766F74F616E56D /* TreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472CDD2966222A3EDB4437E0B3E763C /* TreeBuilder.swift */; };
+		0E078AD752BB8173EB1EFE646316FF0C /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D441BBCD592A862A4AE92B27BB9CCDB /* DocumentType.swift */; };
+		10229862F8D8976996B475AC0F0A4128 /* LoadableFromXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1448FE1A8CBBB192E76050BB0569019 /* LoadableFromXibView.swift */; };
+		137F17796AC24526904B52E654DEAD46 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8124D1925820A5AEF27A96D8EB585 /* Selector.swift */; };
+		14722777567BD138DFFBCF0F95ADA3D1 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7A328BDC64F3F80DE921709C5B1E6 /* DayCell.swift */; };
+		172FABBD81957A51CD559C9740F37A53 /* TokeniserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4589A1A1FE5CC7DE40BC34F19BC5394 /* TokeniserState.swift */; };
+		1F42143ABEFB7FC462935C0A118DCE24 /* ScrollableDatepicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C045040D12A59AE9ED65D093D5A31 /* ScrollableDatepicker-dummy.m */; };
+		1F4BC487267333FD9BA0D15F605A5957 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A7B75860F516AA3C5029C4371F32C1 /* Connection.swift */; };
+		2F2F7A3D0F038477E9ECFBAA83730B13 /* NodeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA768FB8E745CC41F8BCC79742B8C6 /* NodeVisitor.swift */; };
+		3420D1AC37998321376C7A2895BBBB7E /* ParseErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B408996DBD7235A97A183439F6D9BF /* ParseErrorList.swift */; };
+		3F4C14B74F9D6A37CECB4A0556A0505A /* FormElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3BB8F9B09CD0AC54890E911BB505BB /* FormElement.swift */; };
+		401B0E1746AE939E752AE5660C475BF2 /* NodeTraversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48CBDEF55DA70704D8F8E6A51AA94D /* NodeTraversor.swift */; };
+		48C7C93ECED53BE3C65453D282C59734 /* ScrollableDatepicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F59751EE224A857E9DD2AB5377DF724 /* ScrollableDatepicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C40435EE100BB5BAA2FD5EAE1ABE501 /* Pods-Schedule.Urfu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 305E349C49757FBB4905B16257EF113E /* Pods-Schedule.Urfu-dummy.m */; };
+		4E9C7750077B96C9547D128EE8586936 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81F4AA34801F8357892C45F81A4CA37 /* Node.swift */; };
+		4EB6434DB147CEA7B118E78061F40A4D /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE39721CFDA7AA791615D50742C94FAD /* TextNode.swift */; };
+		5071515F93A96C2C16B2126B2747BDF9 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E676B8F918CA3A3D8F3B76927A03785 /* Comment.swift */; };
+		52E2F994CCDF126666A7E4C75371117B /* DataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DFD352B7B6577FCEFC8329661DE46 /* DataNode.swift */; };
+		570DE27060500C0423961A97FD154AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		59AF8562EAEDA9BE610F81D16CA35E55 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E776BAB74B558966467DFB7B9FB279 /* Parser.swift */; };
+		5B3E9EAAA99168661201D394499287C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		5CA6EE305EE4570BF987E7C9F2E75525 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9619BFA8B024606E21740A357C0E50 /* Attribute.swift */; };
+		61650A41543B733652CC3DFC9B5A924E /* SwiftSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A311E35D1663FBA5B24C27DA7C064527 /* SwiftSoup-dummy.m */; };
+		6461F686DBBC24AFFD00E228B7D9BCDA /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885B6F9569049663D51B81673CF386E /* OrderedDictionary.swift */; };
+		6516B3958409122D052C4FE52F9DFA88 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF51AB792088DE3F894D49022B7AF2 /* String.swift */; };
+		69B904052DA6F405763A82AD221B1AEB /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B929E18A5C5C4DBB55C51D9A88097 /* Collector.swift */; };
+		6BA73E11A01F228A5753F62B77FC2580 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABABCC62F44FDB95D036C21C993DEB6 /* Entities.swift */; };
+		6BEF95F49D618BAD5C9C261B73411832 /* XmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FCC27FFFE4FEB6C5273AB29EDF44D3 /* XmlTreeBuilder.swift */; };
+		6FD1F20463A6717D1F741C437D61529A /* SimpleDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8D58AE20D86B74433A8498EDF7EF2 /* SimpleDictionary.swift */; };
+		726FF92623A57869ADC4433391DD66B0 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D80DEE5FDD6ED1999486A047B8AC51 /* ArrayExt.swift */; };
+		7B0483D7A589016BE2380267514D5D0C /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192BCE8A35D28F50DCA8DA198046C0CD /* StringUtil.swift */; };
+		7EE3A6D064527A9022E7A7BFCE473137 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4B1E3CB1DB954B8D2BA101D44BE54 /* StreamReader.swift */; };
+		8852E29F139851EB1F58239A23C71829 /* CombiningEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DC4F06B398331FA94C731ECBE4ECF /* CombiningEvaluator.swift */; };
+		90770B8FE0A4BFDDF4C8D0193AC2A9CD /* Pods-Schedule.Urfu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38C15602089A0F6E89929D615DADC392 /* Pods-Schedule.Urfu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		936232C98AFD6BED9AFB4B94DDDD3B5E /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6E5E13EE748A7D71FF85F2FDDF1246 /* DataUtil.swift */; };
+		960514700DC161D5EDF8F815EC4F2A03 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88F1EF86043B2B5F1B682DCC2ADE5F /* Tag.swift */; };
+		96270742193A545F09B086A1BD9BF8B4 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2A976ECAB509296BF4F32859B5896A /* Element.swift */; };
+		98CC5AFB23120A36A483349180B2859E /* ScrollableDatepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E48637373104517A65771A186E6C7B7 /* ScrollableDatepicker.swift */; };
+		9A43BCC74CF25F8A3E60F6F10E62B31A /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB197F88AE6C1027F2BBF9C3CC83B0 /* Document.swift */; };
+		A191248881CFFFE7E6C553F6B22CC25A /* SwiftSoup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DB9D9D33BDBAFD4180F969D1363F08 /* SwiftSoup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E372B59EE9453144282B49335CB0B8 /* HtmlTreeBuilderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803BFD5D569570B3FD372B3AEAAEFA8C /* HtmlTreeBuilderState.swift */; };
+		A27023082E5123D889F459AE9C192AC4 /* Tokeniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5B0F5229C05995182DD0342E328E6 /* Tokeniser.swift */; };
+		A5D8C89558E573601B18584C60DC3A21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A7B5CA25DAE6900BF46F9834E6B9D782 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E6B6A4ED9174721B7497496C2F6FF /* Configuration.swift */; };
+		AB6BC1DFA4D7AAAAB2D6C90CAB96B6A6 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731B8D8E5F7B46BE772D1CE1211410E /* Token.swift */; };
+		AE7CB3897EFE15F244663AF553B397F6 /* ScrollableDatepicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8FE675179EF313C71267DC837DA96AF5 /* ScrollableDatepicker.bundle */; };
+		AFEA04FCAB8BDD2DAF27D67781B48F08 /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D437BB0A7DF0F490EF044966F3CC517 /* StringBuilder.swift */; };
+		B1794C9E4975B62585DEF75EEED2E874 /* BooleanAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6770285934C198B554EDFB212131FB /* BooleanAttribute.swift */; };
+		B261802151A89995FE51C3861C89BB9D /* SerializationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113775E008204D3794EFEC94D3472C9B /* SerializationException.swift */; };
+		B3D0D74FD1609B5C6E817C441D5E36A1 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DDCC2DD882DF2ADA5A0293D7BFA913E /* DayCell.xib */; };
+		B783EB8506DECAEA26C68383D10F4954 /* CharacterReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0100CF0C5F3D84F461168790F0696 /* CharacterReader.swift */; };
+		B8C4F68977E0E86FA594847C331FED5E /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491BA0AED7FB2943EF3421EE375F15C /* Evaluator.swift */; };
+		BD7119A1019054F8729A459B0F196062 /* XmlDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3A5A3F80A4E7F1AA3FAAAA13634EA /* XmlDeclaration.swift */; };
+		CB6BEED201DA87953B0A0B310461B3B1 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7955F254C87D523FDD992F44564A33 /* OrderedSet.swift */; };
+		D0CCAD56E7DE80A0476CBCFE15C19E41 /* ParseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E306EDE9DAD3FEB31107031A4B6625 /* ParseSettings.swift */; };
+		D2590D98836C20359D203CB9FC3ACB08 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3F5AF7CA2CFC563C956A57B22AE7 /* Validate.swift */; };
+		D33938B6390ECEC0D9CFDC868E559DAF /* Cleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F976A639F4FEFFF79E38A44F1E564 /* Cleaner.swift */; };
+		D8CD35A9F81F3796B81DD4439352E5B7 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6F038E430D36BDE3AC821F6D860AF /* ParseError.swift */; };
+		DB9A2A77CE481EBD1E68ACC346B60ED3 /* ScrollableDatepicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68562D664F7484C63B35D267C901739C /* ScrollableDatepicker.xib */; };
+		DBA913729322B4BE965A2BA64C1B652A /* UnicodeScalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAA0625A7D9BAB2AEA355D46E7557D /* UnicodeScalar.swift */; };
+		DC35E4EF7F752486BC5D1A642DC4CCFC /* Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0B4EF8C14378769585CA55454EE90 /* Whitelist.swift */; };
+		DCF12188E01DB04272BE0317F6B8ABA3 /* SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B436C782B85289287886BF25D83DE14F /* SwiftSoup.swift */; };
+		E1B39FA12B5E466F65B3D9CB25CC2B82 /* HttpStatusException.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6185AA76D5456E0A21F37DA545D50E9 /* HttpStatusException.swift */; };
+		E3BEE7B58E3851D8BE2D0D2F9668A195 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A597C83EA0BF2C0A11BE30DC194D9 /* Pattern.swift */; };
+		E427364FBCE97606EC043DA5F4B59796 /* QueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D852A508D419C5E80729F57219E5FEE /* QueryParser.swift */; };
+		E6029EE48E429EF69F665A54449761BE /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8708EF66DE87A20A187299EC18CC011 /* Elements.swift */; };
+		EF056BADC105BAA836672ED0585315D5 /* TokenQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94ECCC4D5B058F40A4F4256DA5E7DB /* TokenQueue.swift */; };
+		F4C3DAFACEC96B9232DEAA3ECEB8AD8B /* CharacterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85B3BC0415D197949BE295B174D781 /* CharacterExt.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70D59F81724D2313093F7AB648CB5F32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9764F57FBFFADCCE9C041CB245349430;
+			remoteInfo = "ScrollableDatepicker-ScrollableDatepicker";
+		};
+		70E768687DC894863FA6FCE61068C590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213F95C277C4DAA8A0E29E07141F8BBF;
+			remoteInfo = ScrollableDatepicker;
+		};
+		7412F06338E09C6CDB70323277C1DB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B105D6F4098B341A45FE17AE1E0992;
+			remoteInfo = SwiftSoup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B6F038E430D36BDE3AC821F6D860AF /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseError.swift; path = Sources/ParseError.swift; sourceTree = "<group>"; };
+		01A6AA6958A5D30050AB390F916006A3 /* SwiftSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-prefix.pch"; sourceTree = "<group>"; };
+		01D80DEE5FDD6ED1999486A047B8AC51 /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sources/ArrayExt.swift; sourceTree = "<group>"; };
+		021ADEC4D67A92B969DBE38CFDAF37CB /* Exception.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = Sources/Exception.swift; sourceTree = "<group>"; };
+		025E6B6A4ED9174721B7497496C2F6FF /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
+		07E0B4EF8C14378769585CA55454EE90 /* Whitelist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Whitelist.swift; path = Sources/Whitelist.swift; sourceTree = "<group>"; };
+		0D441BBCD592A862A4AE92B27BB9CCDB /* DocumentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentType.swift; path = Sources/DocumentType.swift; sourceTree = "<group>"; };
+		113775E008204D3794EFEC94D3472C9B /* SerializationException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerializationException.swift; path = Sources/SerializationException.swift; sourceTree = "<group>"; };
+		16E776BAB74B558966467DFB7B9FB279 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		192BCE8A35D28F50DCA8DA198046C0CD /* StringUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Sources/StringUtil.swift; sourceTree = "<group>"; };
+		1EFBBEB4D8593C0F46207E8CD52854F5 /* ScrollableDatepicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScrollableDatepicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B8812348BDDE8E1B2B4593B46D284E /* ResourceBundle-ScrollableDatepicker-ScrollableDatepicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ScrollableDatepicker-ScrollableDatepicker-Info.plist"; sourceTree = "<group>"; };
+		27DB9D9D33BDBAFD4180F969D1363F08 /* SwiftSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-umbrella.h"; sourceTree = "<group>"; };
+		305E349C49757FBB4905B16257EF113E /* Pods-Schedule.Urfu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Schedule.Urfu-dummy.m"; sourceTree = "<group>"; };
+		32838DD2DED1794D5D6EF71FFBB7ED4F /* SwiftSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E306EDE9DAD3FEB31107031A4B6625 /* ParseSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseSettings.swift; path = Sources/ParseSettings.swift; sourceTree = "<group>"; };
+		3885B6F9569049663D51B81673CF386E /* OrderedDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedDictionary.swift; path = Sources/OrderedDictionary.swift; sourceTree = "<group>"; };
+		38C15602089A0F6E89929D615DADC392 /* Pods-Schedule.Urfu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Schedule.Urfu-umbrella.h"; sourceTree = "<group>"; };
+		3ABABCC62F44FDB95D036C21C993DEB6 /* Entities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entities.swift; path = Sources/Entities.swift; sourceTree = "<group>"; };
+		3F7DFD352B7B6577FCEFC8329661DE46 /* DataNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataNode.swift; path = Sources/DataNode.swift; sourceTree = "<group>"; };
+		41B408996DBD7235A97A183439F6D9BF /* ParseErrorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseErrorList.swift; path = Sources/ParseErrorList.swift; sourceTree = "<group>"; };
+		46EE46F62CDC83FCC78C9EBD7E7B07B8 /* StructuralEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructuralEvaluator.swift; path = Sources/StructuralEvaluator.swift; sourceTree = "<group>"; };
+		484D583FB9C739F0F36C25F3B12C61AC /* Pods-Schedule.Urfu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Schedule.Urfu-frameworks.sh"; sourceTree = "<group>"; };
+		4C9619BFA8B024606E21740A357C0E50 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
+		4F7955F254C87D523FDD992F44564A33 /* OrderedSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedSet.swift; path = Sources/OrderedSet.swift; sourceTree = "<group>"; };
+		4F99D8D13DDDB0B775FFB6D23A33EE20 /* Pods-Schedule.Urfu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Schedule.Urfu.debug.xcconfig"; sourceTree = "<group>"; };
+		51A5B0F5229C05995182DD0342E328E6 /* Tokeniser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokeniser.swift; path = Sources/Tokeniser.swift; sourceTree = "<group>"; };
+		534DE2103F8DDAE6C6A184F76539ECD7 /* ScrollableDatepicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableDatepicker.xcconfig; sourceTree = "<group>"; };
+		56C8124D1925820A5AEF27A96D8EB585 /* Selector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Selector.swift; path = Sources/Selector.swift; sourceTree = "<group>"; };
+		596939A1F6213B469B960F2E8FAC8D62 /* Pods_Schedule_Urfu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schedule_Urfu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9F5A87FE261C06AB5F5BB0DD60D2B0 /* HtmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilder.swift; path = Sources/HtmlTreeBuilder.swift; sourceTree = "<group>"; };
+		649243D1A5531C51B76A820DBFBD4D8A /* Pods-Schedule.Urfu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Schedule.Urfu-acknowledgements.markdown"; sourceTree = "<group>"; };
+		64A3A5A3F80A4E7F1AA3FAAAA13634EA /* XmlDeclaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlDeclaration.swift; path = Sources/XmlDeclaration.swift; sourceTree = "<group>"; };
+		64F40A7C4BB1169463AAA62D132257B2 /* ScrollableDatepicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableDatepicker-prefix.pch"; sourceTree = "<group>"; };
+		68562D664F7484C63B35D267C901739C /* ScrollableDatepicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ScrollableDatepicker.xib; path = Sources/ScrollableDatepicker.xib; sourceTree = "<group>"; };
+		6C6770285934C198B554EDFB212131FB /* BooleanAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanAttribute.swift; path = Sources/BooleanAttribute.swift; sourceTree = "<group>"; };
+		6D437BB0A7DF0F490EF044966F3CC517 /* StringBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringBuilder.swift; path = Sources/StringBuilder.swift; sourceTree = "<group>"; };
+		6DDCC2DD882DF2ADA5A0293D7BFA913E /* DayCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DayCell.xib; path = Sources/DayCell.xib; sourceTree = "<group>"; };
+		6ECC75943F43986C888E3E87AB01A5E4 /* Attributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = Sources/Attributes.swift; sourceTree = "<group>"; };
+		6F59751EE224A857E9DD2AB5377DF724 /* ScrollableDatepicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableDatepicker-umbrella.h"; sourceTree = "<group>"; };
+		76D60DA13E3A3C844D52097D07F8BE98 /* Pods-Schedule.Urfu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Schedule.Urfu-acknowledgements.plist"; sourceTree = "<group>"; };
+		792F976A639F4FEFFF79E38A44F1E564 /* Cleaner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cleaner.swift; path = Sources/Cleaner.swift; sourceTree = "<group>"; };
+		7DF8D58AE20D86B74433A8498EDF7EF2 /* SimpleDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDictionary.swift; path = Sources/SimpleDictionary.swift; sourceTree = "<group>"; };
+		7E5B929E18A5C5C4DBB55C51D9A88097 /* Collector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collector.swift; path = Sources/Collector.swift; sourceTree = "<group>"; };
+		7E676B8F918CA3A3D8F3B76927A03785 /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Sources/Comment.swift; sourceTree = "<group>"; };
+		803BFD5D569570B3FD372B3AEAAEFA8C /* HtmlTreeBuilderState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilderState.swift; path = Sources/HtmlTreeBuilderState.swift; sourceTree = "<group>"; };
+		83DB197F88AE6C1027F2BBF9C3CC83B0 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
+		88CAA0625A7D9BAB2AEA355D46E7557D /* UnicodeScalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeScalar.swift; path = Sources/UnicodeScalar.swift; sourceTree = "<group>"; };
+		8C2DFF42B1D205110E4A51863EA98C3C /* Pods-Schedule.Urfu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Schedule.Urfu-Info.plist"; sourceTree = "<group>"; };
+		8C5B0D405F3E6377637402BF6314D6AF /* SwiftSoup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.xcconfig; sourceTree = "<group>"; };
+		8D852A508D419C5E80729F57219E5FEE /* QueryParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryParser.swift; path = Sources/QueryParser.swift; sourceTree = "<group>"; };
+		8E48637373104517A65771A186E6C7B7 /* ScrollableDatepicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableDatepicker.swift; path = Sources/ScrollableDatepicker.swift; sourceTree = "<group>"; };
+		8FE675179EF313C71267DC837DA96AF5 /* ScrollableDatepicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollableDatepicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		963CAB65575B68D0534BD373F2E859B6 /* SwiftSoup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSoup.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A311E35D1663FBA5B24C27DA7C064527 /* SwiftSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSoup-dummy.m"; sourceTree = "<group>"; };
+		A7BBF67F72C9C32A30A5E8D80AF69824 /* ScrollableDatepicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollableDatepicker-Info.plist"; sourceTree = "<group>"; };
+		AD7A597C83EA0BF2C0A11BE30DC194D9 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		B223AEF7AB3BBEC0688D2A6278E6671E /* Pods-Schedule.Urfu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Schedule.Urfu.modulemap"; sourceTree = "<group>"; };
+		B436C782B85289287886BF25D83DE14F /* SwiftSoup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSoup.swift; path = Sources/SwiftSoup.swift; sourceTree = "<group>"; };
+		B78DC4F06B398331FA94C731ECBE4ECF /* CombiningEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombiningEvaluator.swift; path = Sources/CombiningEvaluator.swift; sourceTree = "<group>"; };
+		BD2A976ECAB509296BF4F32859B5896A /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
+		BFE4B1E3CB1DB954B8D2BA101D44BE54 /* StreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamReader.swift; path = Sources/StreamReader.swift; sourceTree = "<group>"; };
+		C0AB3F5AF7CA2CFC563C956A57B22AE7 /* Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validate.swift; path = Sources/Validate.swift; sourceTree = "<group>"; };
+		C4589A1A1FE5CC7DE40BC34F19BC5394 /* TokeniserState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokeniserState.swift; path = Sources/TokeniserState.swift; sourceTree = "<group>"; };
+		C491BA0AED7FB2943EF3421EE375F15C /* Evaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Evaluator.swift; sourceTree = "<group>"; };
+		C7225A23BC77182820F4A0C4E813F0FB /* ScrollableDatepicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollableDatepicker.modulemap; sourceTree = "<group>"; };
+		C8A7B75860F516AA3C5029C4371F32C1 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Connection.swift; sourceTree = "<group>"; };
+		C95B75DBDA7E68B4A5B66CDD131F630A /* SwiftSoup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSoup-Info.plist"; sourceTree = "<group>"; };
+		C9B7A328BDC64F3F80DE921709C5B1E6 /* DayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayCell.swift; path = Sources/DayCell.swift; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD48CBDEF55DA70704D8F8E6A51AA94D /* NodeTraversor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeTraversor.swift; path = Sources/NodeTraversor.swift; sourceTree = "<group>"; };
+		CD88F1EF86043B2B5F1B682DCC2ADE5F /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Tag.swift; sourceTree = "<group>"; };
+		CF85B3BC0415D197949BE295B174D781 /* CharacterExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterExt.swift; path = Sources/CharacterExt.swift; sourceTree = "<group>"; };
+		D1448FE1A8CBBB192E76050BB0569019 /* LoadableFromXibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadableFromXibView.swift; path = Sources/LoadableFromXibView.swift; sourceTree = "<group>"; };
+		D7FF51AB792088DE3F894D49022B7AF2 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/String.swift; sourceTree = "<group>"; };
+		DACA768FB8E745CC41F8BCC79742B8C6 /* NodeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeVisitor.swift; path = Sources/NodeVisitor.swift; sourceTree = "<group>"; };
+		DC6E5E13EE748A7D71FF85F2FDDF1246 /* DataUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = Sources/DataUtil.swift; sourceTree = "<group>"; };
+		DE94ECCC4D5B058F40A4F4256DA5E7DB /* TokenQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenQueue.swift; path = Sources/TokenQueue.swift; sourceTree = "<group>"; };
+		DEE0100CF0C5F3D84F461168790F0696 /* CharacterReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterReader.swift; path = Sources/CharacterReader.swift; sourceTree = "<group>"; };
+		E4FCC27FFFE4FEB6C5273AB29EDF44D3 /* XmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlTreeBuilder.swift; path = Sources/XmlTreeBuilder.swift; sourceTree = "<group>"; };
+		F31C045040D12A59AE9ED65D093D5A31 /* ScrollableDatepicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableDatepicker-dummy.m"; sourceTree = "<group>"; };
+		F3A7F2ED1F4FF33EEA5B023973844C27 /* Pods-Schedule.Urfu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Schedule.Urfu.release.xcconfig"; sourceTree = "<group>"; };
+		F472CDD2966222A3EDB4437E0B3E763C /* TreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeBuilder.swift; path = Sources/TreeBuilder.swift; sourceTree = "<group>"; };
+		F6185AA76D5456E0A21F37DA545D50E9 /* HttpStatusException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusException.swift; path = Sources/HttpStatusException.swift; sourceTree = "<group>"; };
+		F731B8D8E5F7B46BE772D1CE1211410E /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Sources/Token.swift; sourceTree = "<group>"; };
+		F81F4AA34801F8357892C45F81A4CA37 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
+		F8708EF66DE87A20A187299EC18CC011 /* Elements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elements.swift; path = Sources/Elements.swift; sourceTree = "<group>"; };
+		FE39721CFDA7AA791615D50742C94FAD /* TextNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextNode.swift; path = Sources/TextNode.swift; sourceTree = "<group>"; };
+		FF3BB8F9B09CD0AC54890E911BB505BB /* FormElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormElement.swift; path = Sources/FormElement.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B893E5EB7046223D4A6918D7A789B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D8C89558E573601B18584C60DC3A21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D893BD2DD02E83CAD9021F9C0106AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B3E9EAAA99168661201D394499287C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA9061CBE8D4B091E420E707FED52CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570DE27060500C0423961A97FD154AE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FAA336FCABD521C2BB8CB1EF61C480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		069C4F0EC71A5303A3CB4C3B40228582 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				26B8812348BDDE8E1B2B4593B46D284E /* ResourceBundle-ScrollableDatepicker-ScrollableDatepicker-Info.plist */,
+				C7225A23BC77182820F4A0C4E813F0FB /* ScrollableDatepicker.modulemap */,
+				534DE2103F8DDAE6C6A184F76539ECD7 /* ScrollableDatepicker.xcconfig */,
+				F31C045040D12A59AE9ED65D093D5A31 /* ScrollableDatepicker-dummy.m */,
+				A7BBF67F72C9C32A30A5E8D80AF69824 /* ScrollableDatepicker-Info.plist */,
+				64F40A7C4BB1169463AAA62D132257B2 /* ScrollableDatepicker-prefix.pch */,
+				6F59751EE224A857E9DD2AB5377DF724 /* ScrollableDatepicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScrollableDatepicker";
+			sourceTree = "<group>";
+		};
+		0DE4A154F63BAC2D68C464A14F2181C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DDCC2DD882DF2ADA5A0293D7BFA913E /* DayCell.xib */,
+				68562D664F7484C63B35D267C901739C /* ScrollableDatepicker.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		172F6DC4F72797A3E16693A6CB0ED834 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A937B716C0680F8766D038C3FF25B45 /* ScrollableDatepicker */,
+				7F0F1DCF3381C538F213F8DA4CBAC0F6 /* SwiftSoup */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A937B716C0680F8766D038C3FF25B45 /* ScrollableDatepicker */ = {
+			isa = PBXGroup;
+			children = (
+				025E6B6A4ED9174721B7497496C2F6FF /* Configuration.swift */,
+				C9B7A328BDC64F3F80DE921709C5B1E6 /* DayCell.swift */,
+				D1448FE1A8CBBB192E76050BB0569019 /* LoadableFromXibView.swift */,
+				8E48637373104517A65771A186E6C7B7 /* ScrollableDatepicker.swift */,
+				0DE4A154F63BAC2D68C464A14F2181C9 /* Resources */,
+				069C4F0EC71A5303A3CB4C3B40228582 /* Support Files */,
+			);
+			path = ScrollableDatepicker;
+			sourceTree = "<group>";
+		};
+		56F41CB229E43DCA8CA6D7E114011057 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E13032549BB72BBB23A73C570CACAC54 /* Pods-Schedule.Urfu */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5DAFF38F5B76BCA0B2F0E4D00AB4D46D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				963CAB65575B68D0534BD373F2E859B6 /* SwiftSoup.modulemap */,
+				8C5B0D405F3E6377637402BF6314D6AF /* SwiftSoup.xcconfig */,
+				A311E35D1663FBA5B24C27DA7C064527 /* SwiftSoup-dummy.m */,
+				C95B75DBDA7E68B4A5B66CDD131F630A /* SwiftSoup-Info.plist */,
+				01A6AA6958A5D30050AB390F916006A3 /* SwiftSoup-prefix.pch */,
+				27DB9D9D33BDBAFD4180F969D1363F08 /* SwiftSoup-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSoup";
+			sourceTree = "<group>";
+		};
+		7F0F1DCF3381C538F213F8DA4CBAC0F6 /* SwiftSoup */ = {
+			isa = PBXGroup;
+			children = (
+				01D80DEE5FDD6ED1999486A047B8AC51 /* ArrayExt.swift */,
+				4C9619BFA8B024606E21740A357C0E50 /* Attribute.swift */,
+				6ECC75943F43986C888E3E87AB01A5E4 /* Attributes.swift */,
+				6C6770285934C198B554EDFB212131FB /* BooleanAttribute.swift */,
+				CF85B3BC0415D197949BE295B174D781 /* CharacterExt.swift */,
+				DEE0100CF0C5F3D84F461168790F0696 /* CharacterReader.swift */,
+				792F976A639F4FEFFF79E38A44F1E564 /* Cleaner.swift */,
+				7E5B929E18A5C5C4DBB55C51D9A88097 /* Collector.swift */,
+				B78DC4F06B398331FA94C731ECBE4ECF /* CombiningEvaluator.swift */,
+				7E676B8F918CA3A3D8F3B76927A03785 /* Comment.swift */,
+				C8A7B75860F516AA3C5029C4371F32C1 /* Connection.swift */,
+				3F7DFD352B7B6577FCEFC8329661DE46 /* DataNode.swift */,
+				DC6E5E13EE748A7D71FF85F2FDDF1246 /* DataUtil.swift */,
+				83DB197F88AE6C1027F2BBF9C3CC83B0 /* Document.swift */,
+				0D441BBCD592A862A4AE92B27BB9CCDB /* DocumentType.swift */,
+				BD2A976ECAB509296BF4F32859B5896A /* Element.swift */,
+				F8708EF66DE87A20A187299EC18CC011 /* Elements.swift */,
+				3ABABCC62F44FDB95D036C21C993DEB6 /* Entities.swift */,
+				C491BA0AED7FB2943EF3421EE375F15C /* Evaluator.swift */,
+				021ADEC4D67A92B969DBE38CFDAF37CB /* Exception.swift */,
+				FF3BB8F9B09CD0AC54890E911BB505BB /* FormElement.swift */,
+				5F9F5A87FE261C06AB5F5BB0DD60D2B0 /* HtmlTreeBuilder.swift */,
+				803BFD5D569570B3FD372B3AEAAEFA8C /* HtmlTreeBuilderState.swift */,
+				F6185AA76D5456E0A21F37DA545D50E9 /* HttpStatusException.swift */,
+				F81F4AA34801F8357892C45F81A4CA37 /* Node.swift */,
+				CD48CBDEF55DA70704D8F8E6A51AA94D /* NodeTraversor.swift */,
+				DACA768FB8E745CC41F8BCC79742B8C6 /* NodeVisitor.swift */,
+				3885B6F9569049663D51B81673CF386E /* OrderedDictionary.swift */,
+				4F7955F254C87D523FDD992F44564A33 /* OrderedSet.swift */,
+				00B6F038E430D36BDE3AC821F6D860AF /* ParseError.swift */,
+				41B408996DBD7235A97A183439F6D9BF /* ParseErrorList.swift */,
+				16E776BAB74B558966467DFB7B9FB279 /* Parser.swift */,
+				32E306EDE9DAD3FEB31107031A4B6625 /* ParseSettings.swift */,
+				AD7A597C83EA0BF2C0A11BE30DC194D9 /* Pattern.swift */,
+				8D852A508D419C5E80729F57219E5FEE /* QueryParser.swift */,
+				56C8124D1925820A5AEF27A96D8EB585 /* Selector.swift */,
+				113775E008204D3794EFEC94D3472C9B /* SerializationException.swift */,
+				7DF8D58AE20D86B74433A8498EDF7EF2 /* SimpleDictionary.swift */,
+				BFE4B1E3CB1DB954B8D2BA101D44BE54 /* StreamReader.swift */,
+				D7FF51AB792088DE3F894D49022B7AF2 /* String.swift */,
+				6D437BB0A7DF0F490EF044966F3CC517 /* StringBuilder.swift */,
+				192BCE8A35D28F50DCA8DA198046C0CD /* StringUtil.swift */,
+				46EE46F62CDC83FCC78C9EBD7E7B07B8 /* StructuralEvaluator.swift */,
+				B436C782B85289287886BF25D83DE14F /* SwiftSoup.swift */,
+				CD88F1EF86043B2B5F1B682DCC2ADE5F /* Tag.swift */,
+				FE39721CFDA7AA791615D50742C94FAD /* TextNode.swift */,
+				F731B8D8E5F7B46BE772D1CE1211410E /* Token.swift */,
+				51A5B0F5229C05995182DD0342E328E6 /* Tokeniser.swift */,
+				C4589A1A1FE5CC7DE40BC34F19BC5394 /* TokeniserState.swift */,
+				DE94ECCC4D5B058F40A4F4256DA5E7DB /* TokenQueue.swift */,
+				F472CDD2966222A3EDB4437E0B3E763C /* TreeBuilder.swift */,
+				88CAA0625A7D9BAB2AEA355D46E7557D /* UnicodeScalar.swift */,
+				C0AB3F5AF7CA2CFC563C956A57B22AE7 /* Validate.swift */,
+				07E0B4EF8C14378769585CA55454EE90 /* Whitelist.swift */,
+				64A3A5A3F80A4E7F1AA3FAAAA13634EA /* XmlDeclaration.swift */,
+				E4FCC27FFFE4FEB6C5273AB29EDF44D3 /* XmlTreeBuilder.swift */,
+				5DAFF38F5B76BCA0B2F0E4D00AB4D46D /* Support Files */,
+			);
+			path = SwiftSoup;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				172F6DC4F72797A3E16693A6CB0ED834 /* Pods */,
+				F56618D251AFCAC6E76169F558CE49EF /* Products */,
+				56F41CB229E43DCA8CA6D7E114011057 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E13032549BB72BBB23A73C570CACAC54 /* Pods-Schedule.Urfu */ = {
+			isa = PBXGroup;
+			children = (
+				B223AEF7AB3BBEC0688D2A6278E6671E /* Pods-Schedule.Urfu.modulemap */,
+				649243D1A5531C51B76A820DBFBD4D8A /* Pods-Schedule.Urfu-acknowledgements.markdown */,
+				76D60DA13E3A3C844D52097D07F8BE98 /* Pods-Schedule.Urfu-acknowledgements.plist */,
+				305E349C49757FBB4905B16257EF113E /* Pods-Schedule.Urfu-dummy.m */,
+				484D583FB9C739F0F36C25F3B12C61AC /* Pods-Schedule.Urfu-frameworks.sh */,
+				8C2DFF42B1D205110E4A51863EA98C3C /* Pods-Schedule.Urfu-Info.plist */,
+				38C15602089A0F6E89929D615DADC392 /* Pods-Schedule.Urfu-umbrella.h */,
+				4F99D8D13DDDB0B775FFB6D23A33EE20 /* Pods-Schedule.Urfu.debug.xcconfig */,
+				F3A7F2ED1F4FF33EEA5B023973844C27 /* Pods-Schedule.Urfu.release.xcconfig */,
+			);
+			name = "Pods-Schedule.Urfu";
+			path = "Target Support Files/Pods-Schedule.Urfu";
+			sourceTree = "<group>";
+		};
+		F56618D251AFCAC6E76169F558CE49EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				596939A1F6213B469B960F2E8FAC8D62 /* Pods_Schedule_Urfu.framework */,
+				8FE675179EF313C71267DC837DA96AF5 /* ScrollableDatepicker.bundle */,
+				1EFBBEB4D8593C0F46207E8CD52854F5 /* ScrollableDatepicker.framework */,
+				32838DD2DED1794D5D6EF71FFBB7ED4F /* SwiftSoup.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		646CA1292C01F73A091D9AC6DAB712F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90770B8FE0A4BFDDF4C8D0193AC2A9CD /* Pods-Schedule.Urfu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA93596617DC93AA0E34642CCC6EDE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A191248881CFFFE7E6C553F6B22CC25A /* SwiftSoup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE3D0866B8333E72CA9C22BD8573B34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C7C93ECED53BE3C65453D282C59734 /* ScrollableDatepicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		213F95C277C4DAA8A0E29E07141F8BBF /* ScrollableDatepicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B923410DBB0EBA0942E00BBB71CE6D12 /* Build configuration list for PBXNativeTarget "ScrollableDatepicker" */;
+			buildPhases = (
+				DDE3D0866B8333E72CA9C22BD8573B34 /* Headers */,
+				471A148F00477502CBE1BD1675581FA5 /* Sources */,
+				7AA9061CBE8D4B091E420E707FED52CB /* Frameworks */,
+				3D5D7A73588438EDAB4518FB0BF4EC6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F9586B76EC9CB867F48DEB1723009DB /* PBXTargetDependency */,
+			);
+			name = ScrollableDatepicker;
+			productName = ScrollableDatepicker;
+			productReference = 1EFBBEB4D8593C0F46207E8CD52854F5 /* ScrollableDatepicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		67B105D6F4098B341A45FE17AE1E0992 /* SwiftSoup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38ACB3C428C905F3478F54C608E7E0B /* Build configuration list for PBXNativeTarget "SwiftSoup" */;
+			buildPhases = (
+				6EA93596617DC93AA0E34642CCC6EDE8 /* Headers */,
+				F89FDDE461BF115418083C0C6EC5AD16 /* Sources */,
+				0B893E5EB7046223D4A6918D7A789B58 /* Frameworks */,
+				407D4C662274D7002C612FDBF86D744A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSoup;
+			productName = SwiftSoup;
+			productReference = 32838DD2DED1794D5D6EF71FFBB7ED4F /* SwiftSoup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9764F57FBFFADCCE9C041CB245349430 /* ScrollableDatepicker-ScrollableDatepicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6286E1681DF68C7F404092B4628D5582 /* Build configuration list for PBXNativeTarget "ScrollableDatepicker-ScrollableDatepicker" */;
+			buildPhases = (
+				E27F6EF72A8F81C4F787038155174F8D /* Sources */,
+				F7FAA336FCABD521C2BB8CB1EF61C480 /* Frameworks */,
+				7166BA2FDAD018EAD93A75881F9771D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ScrollableDatepicker-ScrollableDatepicker";
+			productName = "ScrollableDatepicker-ScrollableDatepicker";
+			productReference = 8FE675179EF313C71267DC837DA96AF5 /* ScrollableDatepicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E0E8C8814D3367962766419290CE11BC /* Pods-Schedule.Urfu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779F8D53A3FC7070C55B5BAFCC834B80 /* Build configuration list for PBXNativeTarget "Pods-Schedule.Urfu" */;
+			buildPhases = (
+				646CA1292C01F73A091D9AC6DAB712F0 /* Headers */,
+				91C813FD0E515D93D4BD9BD306250199 /* Sources */,
+				6D893BD2DD02E83CAD9021F9C0106AF8 /* Frameworks */,
+				C62770933EE919FC068996D1B99EC656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				666FC731D274C8CA692F9E6AE936A65D /* PBXTargetDependency */,
+				9E7D47D819B806BBA7479F3D1FA1D5E6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Schedule.Urfu";
+			productName = "Pods-Schedule.Urfu";
+			productReference = 596939A1F6213B469B960F2E8FAC8D62 /* Pods_Schedule_Urfu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F56618D251AFCAC6E76169F558CE49EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0E8C8814D3367962766419290CE11BC /* Pods-Schedule.Urfu */,
+				213F95C277C4DAA8A0E29E07141F8BBF /* ScrollableDatepicker */,
+				9764F57FBFFADCCE9C041CB245349430 /* ScrollableDatepicker-ScrollableDatepicker */,
+				67B105D6F4098B341A45FE17AE1E0992 /* SwiftSoup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D5D7A73588438EDAB4518FB0BF4EC6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7CB3897EFE15F244663AF553B397F6 /* ScrollableDatepicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407D4C662274D7002C612FDBF86D744A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7166BA2FDAD018EAD93A75881F9771D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D0D74FD1609B5C6E817C441D5E36A1 /* DayCell.xib in Resources */,
+				DB9A2A77CE481EBD1E68ACC346B60ED3 /* ScrollableDatepicker.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62770933EE919FC068996D1B99EC656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		471A148F00477502CBE1BD1675581FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B5CA25DAE6900BF46F9834E6B9D782 /* Configuration.swift in Sources */,
+				14722777567BD138DFFBCF0F95ADA3D1 /* DayCell.swift in Sources */,
+				10229862F8D8976996B475AC0F0A4128 /* LoadableFromXibView.swift in Sources */,
+				1F42143ABEFB7FC462935C0A118DCE24 /* ScrollableDatepicker-dummy.m in Sources */,
+				98CC5AFB23120A36A483349180B2859E /* ScrollableDatepicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C813FD0E515D93D4BD9BD306250199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C40435EE100BB5BAA2FD5EAE1ABE501 /* Pods-Schedule.Urfu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E27F6EF72A8F81C4F787038155174F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89FDDE461BF115418083C0C6EC5AD16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726FF92623A57869ADC4433391DD66B0 /* ArrayExt.swift in Sources */,
+				5CA6EE305EE4570BF987E7C9F2E75525 /* Attribute.swift in Sources */,
+				032529137BC682CBBBC7A4F4CB814397 /* Attributes.swift in Sources */,
+				B1794C9E4975B62585DEF75EEED2E874 /* BooleanAttribute.swift in Sources */,
+				F4C3DAFACEC96B9232DEAA3ECEB8AD8B /* CharacterExt.swift in Sources */,
+				B783EB8506DECAEA26C68383D10F4954 /* CharacterReader.swift in Sources */,
+				D33938B6390ECEC0D9CFDC868E559DAF /* Cleaner.swift in Sources */,
+				69B904052DA6F405763A82AD221B1AEB /* Collector.swift in Sources */,
+				8852E29F139851EB1F58239A23C71829 /* CombiningEvaluator.swift in Sources */,
+				5071515F93A96C2C16B2126B2747BDF9 /* Comment.swift in Sources */,
+				1F4BC487267333FD9BA0D15F605A5957 /* Connection.swift in Sources */,
+				52E2F994CCDF126666A7E4C75371117B /* DataNode.swift in Sources */,
+				936232C98AFD6BED9AFB4B94DDDD3B5E /* DataUtil.swift in Sources */,
+				9A43BCC74CF25F8A3E60F6F10E62B31A /* Document.swift in Sources */,
+				0E078AD752BB8173EB1EFE646316FF0C /* DocumentType.swift in Sources */,
+				96270742193A545F09B086A1BD9BF8B4 /* Element.swift in Sources */,
+				E6029EE48E429EF69F665A54449761BE /* Elements.swift in Sources */,
+				6BA73E11A01F228A5753F62B77FC2580 /* Entities.swift in Sources */,
+				B8C4F68977E0E86FA594847C331FED5E /* Evaluator.swift in Sources */,
+				0C294CB828B9748D6B4C5ACA0AAF4980 /* Exception.swift in Sources */,
+				3F4C14B74F9D6A37CECB4A0556A0505A /* FormElement.swift in Sources */,
+				09A4671AF316CC42AA3972843F23D701 /* HtmlTreeBuilder.swift in Sources */,
+				A1E372B59EE9453144282B49335CB0B8 /* HtmlTreeBuilderState.swift in Sources */,
+				E1B39FA12B5E466F65B3D9CB25CC2B82 /* HttpStatusException.swift in Sources */,
+				4E9C7750077B96C9547D128EE8586936 /* Node.swift in Sources */,
+				401B0E1746AE939E752AE5660C475BF2 /* NodeTraversor.swift in Sources */,
+				2F2F7A3D0F038477E9ECFBAA83730B13 /* NodeVisitor.swift in Sources */,
+				6461F686DBBC24AFFD00E228B7D9BCDA /* OrderedDictionary.swift in Sources */,
+				CB6BEED201DA87953B0A0B310461B3B1 /* OrderedSet.swift in Sources */,
+				D8CD35A9F81F3796B81DD4439352E5B7 /* ParseError.swift in Sources */,
+				3420D1AC37998321376C7A2895BBBB7E /* ParseErrorList.swift in Sources */,
+				59AF8562EAEDA9BE610F81D16CA35E55 /* Parser.swift in Sources */,
+				D0CCAD56E7DE80A0476CBCFE15C19E41 /* ParseSettings.swift in Sources */,
+				E3BEE7B58E3851D8BE2D0D2F9668A195 /* Pattern.swift in Sources */,
+				E427364FBCE97606EC043DA5F4B59796 /* QueryParser.swift in Sources */,
+				137F17796AC24526904B52E654DEAD46 /* Selector.swift in Sources */,
+				B261802151A89995FE51C3861C89BB9D /* SerializationException.swift in Sources */,
+				6FD1F20463A6717D1F741C437D61529A /* SimpleDictionary.swift in Sources */,
+				7EE3A6D064527A9022E7A7BFCE473137 /* StreamReader.swift in Sources */,
+				6516B3958409122D052C4FE52F9DFA88 /* String.swift in Sources */,
+				AFEA04FCAB8BDD2DAF27D67781B48F08 /* StringBuilder.swift in Sources */,
+				7B0483D7A589016BE2380267514D5D0C /* StringUtil.swift in Sources */,
+				0799CF52A1461A5E411AA5289A1AC96E /* StructuralEvaluator.swift in Sources */,
+				61650A41543B733652CC3DFC9B5A924E /* SwiftSoup-dummy.m in Sources */,
+				DCF12188E01DB04272BE0317F6B8ABA3 /* SwiftSoup.swift in Sources */,
+				960514700DC161D5EDF8F815EC4F2A03 /* Tag.swift in Sources */,
+				4EB6434DB147CEA7B118E78061F40A4D /* TextNode.swift in Sources */,
+				AB6BC1DFA4D7AAAAB2D6C90CAB96B6A6 /* Token.swift in Sources */,
+				A27023082E5123D889F459AE9C192AC4 /* Tokeniser.swift in Sources */,
+				172FABBD81957A51CD559C9740F37A53 /* TokeniserState.swift in Sources */,
+				EF056BADC105BAA836672ED0585315D5 /* TokenQueue.swift in Sources */,
+				0D4B45F9705D946C5E766F74F616E56D /* TreeBuilder.swift in Sources */,
+				DBA913729322B4BE965A2BA64C1B652A /* UnicodeScalar.swift in Sources */,
+				D2590D98836C20359D203CB9FC3ACB08 /* Validate.swift in Sources */,
+				DC35E4EF7F752486BC5D1A642DC4CCFC /* Whitelist.swift in Sources */,
+				BD7119A1019054F8729A459B0F196062 /* XmlDeclaration.swift in Sources */,
+				6BEF95F49D618BAD5C9C261B73411832 /* XmlTreeBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		666FC731D274C8CA692F9E6AE936A65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollableDatepicker;
+			target = 213F95C277C4DAA8A0E29E07141F8BBF /* ScrollableDatepicker */;
+			targetProxy = 70E768687DC894863FA6FCE61068C590 /* PBXContainerItemProxy */;
+		};
+		7F9586B76EC9CB867F48DEB1723009DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ScrollableDatepicker-ScrollableDatepicker";
+			target = 9764F57FBFFADCCE9C041CB245349430 /* ScrollableDatepicker-ScrollableDatepicker */;
+			targetProxy = 70D59F81724D2313093F7AB648CB5F32 /* PBXContainerItemProxy */;
+		};
+		9E7D47D819B806BBA7479F3D1FA1D5E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSoup;
+			target = 67B105D6F4098B341A45FE17AE1E0992 /* SwiftSoup */;
+			targetProxy = 7412F06338E09C6CDB70323277C1DB70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00A9CD66AE8377E4C1A3BB1B0370D437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534DE2103F8DDAE6C6A184F76539ECD7 /* ScrollableDatepicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableDatepicker/ScrollableDatepicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableDatepicker/ScrollableDatepicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollableDatepicker/ScrollableDatepicker.modulemap";
+				PRODUCT_MODULE_NAME = ScrollableDatepicker;
+				PRODUCT_NAME = ScrollableDatepicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A8B1DA93F811798761BAA6E223481F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A7F2ED1F4FF33EEA5B023973844C27 /* Pods-Schedule.Urfu.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A05F4E6EB44E68FEEB81520F2A79843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534DE2103F8DDAE6C6A184F76539ECD7 /* ScrollableDatepicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ScrollableDatepicker";
+				INFOPLIST_FILE = "Target Support Files/ScrollableDatepicker/ResourceBundle-ScrollableDatepicker-ScrollableDatepicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ScrollableDatepicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5124DB32B5D0F555746B56DA3EA68688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C5B0D405F3E6377637402BF6314D6AF /* SwiftSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52BA5F22D0931A0B4FD2FC161854E9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C5B0D405F3E6377637402BF6314D6AF /* SwiftSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		809D0CBA5D48E511A0AC39A886B6C332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534DE2103F8DDAE6C6A184F76539ECD7 /* ScrollableDatepicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableDatepicker/ScrollableDatepicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableDatepicker/ScrollableDatepicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollableDatepicker/ScrollableDatepicker.modulemap";
+				PRODUCT_MODULE_NAME = ScrollableDatepicker;
+				PRODUCT_NAME = ScrollableDatepicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C82999123E867C4E6C716F3284FE3C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534DE2103F8DDAE6C6A184F76539ECD7 /* ScrollableDatepicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ScrollableDatepicker";
+				INFOPLIST_FILE = "Target Support Files/ScrollableDatepicker/ResourceBundle-ScrollableDatepicker-ScrollableDatepicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ScrollableDatepicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F3588A2B67EEC8E7953F741537266E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F99D8D13DDDB0B775FFB6D23A33EE20 /* Pods-Schedule.Urfu.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
+				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6286E1681DF68C7F404092B4628D5582 /* Build configuration list for PBXNativeTarget "ScrollableDatepicker-ScrollableDatepicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A05F4E6EB44E68FEEB81520F2A79843 /* Debug */,
+				C82999123E867C4E6C716F3284FE3C98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779F8D53A3FC7070C55B5BAFCC834B80 /* Build configuration list for PBXNativeTarget "Pods-Schedule.Urfu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3588A2B67EEC8E7953F741537266E6F /* Debug */,
+				1A8B1DA93F811798761BAA6E223481F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38ACB3C428C905F3478F54C608E7E0B /* Build configuration list for PBXNativeTarget "SwiftSoup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5124DB32B5D0F555746B56DA3EA68688 /* Debug */,
+				52BA5F22D0931A0B4FD2FC161854E9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B923410DBB0EBA0942E00BBB71CE6D12 /* Build configuration list for PBXNativeTarget "ScrollableDatepicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A9CD66AE8377E4C1A3BB1B0370D437 /* Debug */,
+				809D0CBA5D48E511A0AC39A886B6C332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

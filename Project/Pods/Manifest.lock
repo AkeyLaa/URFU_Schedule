@@ -1,0 +1,20 @@
+PODS:
+  - ScrollableDatepicker (2.2.0)
+  - SwiftSoup (2.0.0)
+
+DEPENDENCIES:
+  - ScrollableDatepicker (~> 2.1)
+  - SwiftSoup
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ScrollableDatepicker
+    - SwiftSoup
+
+SPEC CHECKSUMS:
+  ScrollableDatepicker: 0f14e38bcd3517e6632220af11e47d29e0f982db
+  SwiftSoup: 4fe21f65cdbfa3a40559047016b7962b88d29279
+
+PODFILE CHECKSUM: 30a409c7eb07faf7ea24c594563be127b02cd07a
+
+COCOAPODS: 1.6.1

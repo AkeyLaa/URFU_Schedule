@@ -1,0 +1,1230 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5477C9222D4A1F800BF7E53 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5477C9122D4A1F800BF7E53 /* NotificationCenter.framework */; };
+		A5477C9522D4A1F800BF7E53 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5477C9422D4A1F800BF7E53 /* TodayViewController.swift */; };
+		A5477C9822D4A1F800BF7E53 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5477C9622D4A1F800BF7E53 /* MainInterface.storyboard */; };
+		A5477C9C22D4A1F800BF7E53 /* Schedule.Urfu.Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5477C9022D4A1F800BF7E53 /* Schedule.Urfu.Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A597898C22D3635000163396 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597898B22D3635000163396 /* GroupCell.swift */; };
+		A5C3808822CFB2D300AE5AB2 /* Schedule_Urfu_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C3808722CFB2D200AE5AB2 /* Schedule_Urfu_Tests.swift */; };
+		A5C380A422CFBC5900AE5AB2 /* Schedule_UrfuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C380A322CFBC5900AE5AB2 /* Schedule_UrfuUITests.swift */; };
+		A5DB198622CB7CA50062CE7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB198522CB7CA50062CE7F /* AppDelegate.swift */; };
+		A5DB198D22CB7CA50062CE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DB198C22CB7CA50062CE7F /* Assets.xcassets */; };
+		A5DB199022CB7CA50062CE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DB198E22CB7CA50062CE7F /* LaunchScreen.storyboard */; };
+		A5DB19A522CB8BC20062CE7F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19A422CB8BC20062CE7F /* MainNavigationController.swift */; };
+		A5DB19A722CB8D280062CE7F /* SchedulesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19A622CB8D280062CE7F /* SchedulesController.swift */; };
+		A5DB19AE22CB91CE0062CE7F /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19AD22CB91CE0062CE7F /* UserDefaultsExtension.swift */; };
+		A5DB19B222CB94340062CE7F /* SchedulesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19B122CB94340062CE7F /* SchedulesNetworkService.swift */; };
+		A5DB19B522CB94C20062CE7F /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19B322CB94C10062CE7F /* Schedule+CoreDataClass.swift */; };
+		A5DB19B622CB94C20062CE7F /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19B422CB94C10062CE7F /* Schedule+CoreDataProperties.swift */; };
+		A5DB19B922CB94DB0062CE7F /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19B722CB94DB0062CE7F /* Group+CoreDataProperties.swift */; };
+		A5DB19BA22CB94DB0062CE7F /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19B822CB94DB0062CE7F /* Group+CoreDataClass.swift */; };
+		A5DB19BF22CB95760062CE7F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19BC22CB95760062CE7F /* CoreDataStack.swift */; };
+		A5DB19C022CB95760062CE7F /* Schedule.Urfu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19BD22CB95760062CE7F /* Schedule.Urfu.xcdatamodeld */; };
+		A5DB19C222CBA3D30062CE7F /* GroupsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19C122CBA3D30062CE7F /* GroupsNetworkService.swift */; };
+		A5DB19C422CC87400062CE7F /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19C322CC87400062CE7F /* GroupsController.swift */; };
+		A5DB19CA22CC8B720062CE7F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19C922CC8B720062CE7F /* LoginController.swift */; };
+		A5DB19CC22CC904E0062CE7F /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19CB22CC904E0062CE7F /* LoginCell.swift */; };
+		A5DB19CE22CC90590062CE7F /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19CD22CC90590062CE7F /* PageCell.swift */; };
+		A5DB19D022CC90620062CE7F /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19CF22CC90620062CE7F /* ScheduleCell.swift */; };
+		A5DB19D222CCD7EB0062CE7F /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19D122CCD7EB0062CE7F /* Page.swift */; };
+		A5DB19D522CCD8020062CE7F /* AnchorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19D322CCD8020062CE7F /* AnchorExtension.swift */; };
+		A5DB19D622CCD8020062CE7F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19D422CCD8020062CE7F /* Reachability.swift */; };
+		A5DB19DB22CCE9390062CE7F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19DA22CCE9390062CE7F /* NetworkError.swift */; };
+		A5DB19DD22CD1BC20062CE7F /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19DC22CD1BC20062CE7F /* ScheduleData.swift */; };
+		A5DB19E122CF33590062CE7F /* SchedulesCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19E022CF33590062CE7F /* SchedulesCoreDataService.swift */; };
+		A5DB19E322CF38990062CE7F /* GroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19E222CF38990062CE7F /* GroupData.swift */; };
+		A5DB19E622CF39D70062CE7F /* GroupsCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB19E522CF39D70062CE7F /* GroupsCoreDataService.swift */; };
+		D349FB360394766B76E88897 /* Pods_Schedule_Urfu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE06F46C352995B789411EB /* Pods_Schedule_Urfu.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5477C9A22D4A1F800BF7E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DB197A22CB7CA50062CE7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5477C8F22D4A1F800BF7E53;
+			remoteInfo = Schedule.Urfu.Widget;
+		};
+		A5C3808A22CFB2D300AE5AB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DB197A22CB7CA50062CE7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DB198122CB7CA50062CE7F;
+			remoteInfo = Schedule.Urfu;
+		};
+		A5C3809822CFB9A100AE5AB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DB197A22CB7CA50062CE7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DB198122CB7CA50062CE7F;
+			remoteInfo = Schedule.Urfu;
+		};
+		A5C380A622CFBC5900AE5AB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DB197A22CB7CA50062CE7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DB198122CB7CA50062CE7F;
+			remoteInfo = Schedule.Urfu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5477CA022D4A1F800BF7E53 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5477C9C22D4A1F800BF7E53 /* Schedule.Urfu.Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		731A6D1D0A171467FDF00E4A /* Pods-Schedule.Urfu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedule.Urfu.debug.xcconfig"; path = "Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu.debug.xcconfig"; sourceTree = "<group>"; };
+		A5477C9022D4A1F800BF7E53 /* Schedule.Urfu.Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Schedule.Urfu.Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5477C9122D4A1F800BF7E53 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A5477C9422D4A1F800BF7E53 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A5477C9722D4A1F800BF7E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A5477C9922D4A1F800BF7E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5477CA122D4A42E00BF7E53 /* Schedule.Urfu.Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Schedule.Urfu.Widget.entitlements; sourceTree = "<group>"; };
+		A5477CA222D4A46000BF7E53 /* Schedule.Urfu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Schedule.Urfu.entitlements; sourceTree = "<group>"; };
+		A597898B22D3635000163396 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		A5C3808522CFB2D200AE5AB2 /* Schedule.Urfu.Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Schedule.Urfu.Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C3808722CFB2D200AE5AB2 /* Schedule_Urfu_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule_Urfu_Tests.swift; sourceTree = "<group>"; };
+		A5C3808922CFB2D300AE5AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C3809322CFB9A100AE5AB2 /* Schedule.UrfuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Schedule.UrfuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C380A122CFBC5900AE5AB2 /* Schedule.UrfuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Schedule.UrfuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C380A322CFBC5900AE5AB2 /* Schedule_UrfuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule_UrfuUITests.swift; sourceTree = "<group>"; };
+		A5C380A522CFBC5900AE5AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DB198222CB7CA50062CE7F /* Schedule.Urfu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schedule.Urfu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DB198522CB7CA50062CE7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5DB198C22CB7CA50062CE7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5DB198F22CB7CA50062CE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5DB199122CB7CA50062CE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DB19A422CB8BC20062CE7F /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		A5DB19A622CB8D280062CE7F /* SchedulesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesController.swift; sourceTree = "<group>"; };
+		A5DB19AD22CB91CE0062CE7F /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		A5DB19B122CB94340062CE7F /* SchedulesNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesNetworkService.swift; sourceTree = "<group>"; };
+		A5DB19B322CB94C10062CE7F /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A5DB19B422CB94C10062CE7F /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5DB19B722CB94DB0062CE7F /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5DB19B822CB94DB0062CE7F /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A5DB19BC22CB95760062CE7F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A5DB19BE22CB95760062CE7F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A5DB19C122CBA3D30062CE7F /* GroupsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsNetworkService.swift; sourceTree = "<group>"; };
+		A5DB19C322CC87400062CE7F /* GroupsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
+		A5DB19C922CC8B720062CE7F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A5DB19CB22CC904E0062CE7F /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
+		A5DB19CD22CC90590062CE7F /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		A5DB19CF22CC90620062CE7F /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		A5DB19D122CCD7EB0062CE7F /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		A5DB19D322CCD8020062CE7F /* AnchorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorExtension.swift; sourceTree = "<group>"; };
+		A5DB19D422CCD8020062CE7F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A5DB19DA22CCE9390062CE7F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A5DB19DC22CD1BC20062CE7F /* ScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
+		A5DB19E022CF33590062CE7F /* SchedulesCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesCoreDataService.swift; sourceTree = "<group>"; };
+		A5DB19E222CF38990062CE7F /* GroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupData.swift; sourceTree = "<group>"; };
+		A5DB19E522CF39D70062CE7F /* GroupsCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCoreDataService.swift; sourceTree = "<group>"; };
+		CF08E6DD2FA27623B4A7220B /* Pods-Schedule.Urfu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedule.Urfu.release.xcconfig"; path = "Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu.release.xcconfig"; sourceTree = "<group>"; };
+		EDE06F46C352995B789411EB /* Pods_Schedule_Urfu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schedule_Urfu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5477C8D22D4A1F800BF7E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5477C9222D4A1F800BF7E53 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3808222CFB2D200AE5AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3809022CFB9A100AE5AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3809E22CFBC5900AE5AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB197F22CB7CA50062CE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D349FB360394766B76E88897 /* Pods_Schedule_Urfu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2740BABCF9D558A7952A2D2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDE06F46C352995B789411EB /* Pods_Schedule_Urfu.framework */,
+				A5477C9122D4A1F800BF7E53 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F0EA97FC1E44CA31A20EC20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				731A6D1D0A171467FDF00E4A /* Pods-Schedule.Urfu.debug.xcconfig */,
+				CF08E6DD2FA27623B4A7220B /* Pods-Schedule.Urfu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5477C9322D4A1F800BF7E53 /* Schedule.Urfu.Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A5477CA122D4A42E00BF7E53 /* Schedule.Urfu.Widget.entitlements */,
+				A5477C9422D4A1F800BF7E53 /* TodayViewController.swift */,
+				A5477C9622D4A1F800BF7E53 /* MainInterface.storyboard */,
+				A5477C9922D4A1F800BF7E53 /* Info.plist */,
+			);
+			path = Schedule.Urfu.Widget;
+			sourceTree = "<group>";
+		};
+		A5C3808622CFB2D200AE5AB2 /* Schedule.Urfu.Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C3808722CFB2D200AE5AB2 /* Schedule_Urfu_Tests.swift */,
+				A5C3808922CFB2D300AE5AB2 /* Info.plist */,
+			);
+			path = Schedule.Urfu.Tests;
+			sourceTree = "<group>";
+		};
+		A5C380A222CFBC5900AE5AB2 /* Schedule.UrfuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C380A322CFBC5900AE5AB2 /* Schedule_UrfuUITests.swift */,
+				A5C380A522CFBC5900AE5AB2 /* Info.plist */,
+			);
+			path = Schedule.UrfuUITests;
+			sourceTree = "<group>";
+		};
+		A5DB197922CB7CA50062CE7F = {
+			isa = PBXGroup;
+			children = (
+				A5DB198422CB7CA50062CE7F /* Schedule.Urfu */,
+				A5C3808622CFB2D200AE5AB2 /* Schedule.Urfu.Tests */,
+				A5C380A222CFBC5900AE5AB2 /* Schedule.UrfuUITests */,
+				A5477C9322D4A1F800BF7E53 /* Schedule.Urfu.Widget */,
+				A5DB198322CB7CA50062CE7F /* Products */,
+				5F0EA97FC1E44CA31A20EC20 /* Pods */,
+				2740BABCF9D558A7952A2D2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5DB198322CB7CA50062CE7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB198222CB7CA50062CE7F /* Schedule.Urfu.app */,
+				A5C3808522CFB2D200AE5AB2 /* Schedule.Urfu.Tests.xctest */,
+				A5C3809322CFB9A100AE5AB2 /* Schedule.UrfuTests.xctest */,
+				A5C380A122CFBC5900AE5AB2 /* Schedule.UrfuUITests.xctest */,
+				A5477C9022D4A1F800BF7E53 /* Schedule.Urfu.Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5DB198422CB7CA50062CE7F /* Schedule.Urfu */ = {
+			isa = PBXGroup;
+			children = (
+				A5477CA222D4A46000BF7E53 /* Schedule.Urfu.entitlements */,
+				A5DB199722CB80F10062CE7F /* Application */,
+				A5DB199822CB81030062CE7F /* Schedules */,
+				A5DB199922CB812C0062CE7F /* Groups */,
+				A5DB19C522CC8AEE0062CE7F /* Login */,
+				A5DB19AC22CB91740062CE7F /* Extension Files */,
+				A5DB199A22CB81460062CE7F /* Supporting Files */,
+			);
+			path = Schedule.Urfu;
+			sourceTree = "<group>";
+		};
+		A5DB199722CB80F10062CE7F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB199B22CB821C0062CE7F /* Model */,
+				A5DB199C22CB82290062CE7F /* View */,
+				A5DB199D22CB82330062CE7F /* Controller */,
+				A5DB19BB22CB95570062CE7F /* CoreDataService */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A5DB199822CB81030062CE7F /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19A022CB82F60062CE7F /* Model */,
+				A5DB199F22CB82F10062CE7F /* View */,
+				A5DB199E22CB82E90062CE7F /* Controller */,
+				A5DB19AF22CB93660062CE7F /* SchedulesNetworkService */,
+				A5DB19DF22CF328D0062CE7F /* SchedulesCoreDataService */,
+			);
+			path = Schedules;
+			sourceTree = "<group>";
+		};
+		A5DB199922CB812C0062CE7F /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19A322CB83090062CE7F /* Model */,
+				A5DB19A222CB83040062CE7F /* View */,
+				A5DB19A122CB82FE0062CE7F /* Controller */,
+				A5DB19B022CB93BF0062CE7F /* GroupsNetworkService */,
+				A5DB19E422CF399E0062CE7F /* GroupsCoreDataService */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		A5DB199A22CB81460062CE7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB198C22CB7CA50062CE7F /* Assets.xcassets */,
+				A5DB199122CB7CA50062CE7F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5DB199B22CB821C0062CE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19DA22CCE9390062CE7F /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5DB199C22CB82290062CE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB198E22CB7CA50062CE7F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5DB199D22CB82330062CE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB198522CB7CA50062CE7F /* AppDelegate.swift */,
+				A5DB19A422CB8BC20062CE7F /* MainNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5DB199E22CB82E90062CE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19A622CB8D280062CE7F /* SchedulesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5DB199F22CB82F10062CE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19CF22CC90620062CE7F /* ScheduleCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5DB19A022CB82F60062CE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19DC22CD1BC20062CE7F /* ScheduleData.swift */,
+				A5DB19B322CB94C10062CE7F /* Schedule+CoreDataClass.swift */,
+				A5DB19B422CB94C10062CE7F /* Schedule+CoreDataProperties.swift */,
+				A5DB19D722CCE8B60062CE7F /* Responses */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5DB19A122CB82FE0062CE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19C322CC87400062CE7F /* GroupsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5DB19A222CB83040062CE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A597898B22D3635000163396 /* GroupCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5DB19A322CB83090062CE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19B822CB94DB0062CE7F /* Group+CoreDataClass.swift */,
+				A5DB19B722CB94DB0062CE7F /* Group+CoreDataProperties.swift */,
+				A5DB19E222CF38990062CE7F /* GroupData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5DB19AC22CB91740062CE7F /* Extension Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19D322CCD8020062CE7F /* AnchorExtension.swift */,
+				A5DB19D422CCD8020062CE7F /* Reachability.swift */,
+				A5DB19AD22CB91CE0062CE7F /* UserDefaultsExtension.swift */,
+			);
+			path = "Extension Files";
+			sourceTree = "<group>";
+		};
+		A5DB19AF22CB93660062CE7F /* SchedulesNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19B122CB94340062CE7F /* SchedulesNetworkService.swift */,
+			);
+			path = SchedulesNetworkService;
+			sourceTree = "<group>";
+		};
+		A5DB19B022CB93BF0062CE7F /* GroupsNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19C122CBA3D30062CE7F /* GroupsNetworkService.swift */,
+			);
+			path = GroupsNetworkService;
+			sourceTree = "<group>";
+		};
+		A5DB19BB22CB95570062CE7F /* CoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19BC22CB95760062CE7F /* CoreDataStack.swift */,
+				A5DB19BD22CB95760062CE7F /* Schedule.Urfu.xcdatamodeld */,
+			);
+			path = CoreDataService;
+			sourceTree = "<group>";
+		};
+		A5DB19C522CC8AEE0062CE7F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19C822CC8B3B0062CE7F /* Model */,
+				A5DB19C722CC8B370062CE7F /* View */,
+				A5DB19C622CC8B2D0062CE7F /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A5DB19C622CC8B2D0062CE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19C922CC8B720062CE7F /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5DB19C722CC8B370062CE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19CD22CC90590062CE7F /* PageCell.swift */,
+				A5DB19CB22CC904E0062CE7F /* LoginCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5DB19C822CC8B3B0062CE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19D122CCD7EB0062CE7F /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5DB19D722CCE8B60062CE7F /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		A5DB19DF22CF328D0062CE7F /* SchedulesCoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19E022CF33590062CE7F /* SchedulesCoreDataService.swift */,
+			);
+			path = SchedulesCoreDataService;
+			sourceTree = "<group>";
+		};
+		A5DB19E422CF399E0062CE7F /* GroupsCoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB19E522CF39D70062CE7F /* GroupsCoreDataService.swift */,
+			);
+			path = GroupsCoreDataService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5477C8F22D4A1F800BF7E53 /* Schedule.Urfu.Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5477C9F22D4A1F800BF7E53 /* Build configuration list for PBXNativeTarget "Schedule.Urfu.Widget" */;
+			buildPhases = (
+				A5477C8C22D4A1F800BF7E53 /* Sources */,
+				A5477C8D22D4A1F800BF7E53 /* Frameworks */,
+				A5477C8E22D4A1F800BF7E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Schedule.Urfu.Widget;
+			productName = Schedule.Urfu.Widget;
+			productReference = A5477C9022D4A1F800BF7E53 /* Schedule.Urfu.Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A5C3808422CFB2D200AE5AB2 /* Schedule.Urfu.Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C3808E22CFB2D300AE5AB2 /* Build configuration list for PBXNativeTarget "Schedule.Urfu.Tests" */;
+			buildPhases = (
+				A5C3808122CFB2D200AE5AB2 /* Sources */,
+				A5C3808222CFB2D200AE5AB2 /* Frameworks */,
+				A5C3808322CFB2D200AE5AB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C3808B22CFB2D300AE5AB2 /* PBXTargetDependency */,
+			);
+			name = Schedule.Urfu.Tests;
+			productName = Schedule.Urfu.Tests;
+			productReference = A5C3808522CFB2D200AE5AB2 /* Schedule.Urfu.Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C3809222CFB9A100AE5AB2 /* Schedule.UrfuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C3809A22CFB9A100AE5AB2 /* Build configuration list for PBXNativeTarget "Schedule.UrfuTests" */;
+			buildPhases = (
+				A5C3808F22CFB9A100AE5AB2 /* Sources */,
+				A5C3809022CFB9A100AE5AB2 /* Frameworks */,
+				A5C3809122CFB9A100AE5AB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C3809922CFB9A100AE5AB2 /* PBXTargetDependency */,
+			);
+			name = Schedule.UrfuTests;
+			productName = Schedule.UrfuTests;
+			productReference = A5C3809322CFB9A100AE5AB2 /* Schedule.UrfuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C380A022CFBC5900AE5AB2 /* Schedule.UrfuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C380A822CFBC5900AE5AB2 /* Build configuration list for PBXNativeTarget "Schedule.UrfuUITests" */;
+			buildPhases = (
+				A5C3809D22CFBC5900AE5AB2 /* Sources */,
+				A5C3809E22CFBC5900AE5AB2 /* Frameworks */,
+				A5C3809F22CFBC5900AE5AB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C380A722CFBC5900AE5AB2 /* PBXTargetDependency */,
+			);
+			name = Schedule.UrfuUITests;
+			productName = Schedule.UrfuUITests;
+			productReference = A5C380A122CFBC5900AE5AB2 /* Schedule.UrfuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A5DB198122CB7CA50062CE7F /* Schedule.Urfu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DB199422CB7CA50062CE7F /* Build configuration list for PBXNativeTarget "Schedule.Urfu" */;
+			buildPhases = (
+				0AE079DD214F6DB1619F7D0A /* [CP] Check Pods Manifest.lock */,
+				A5DB197E22CB7CA50062CE7F /* Sources */,
+				A5DB197F22CB7CA50062CE7F /* Frameworks */,
+				A5DB198022CB7CA50062CE7F /* Resources */,
+				A24221625C73BD2C06AF8BCB /* [CP] Embed Pods Frameworks */,
+				A5477CA022D4A1F800BF7E53 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5477C9B22D4A1F800BF7E53 /* PBXTargetDependency */,
+			);
+			name = Schedule.Urfu;
+			productName = Schedule.Urfu;
+			productReference = A5DB198222CB7CA50062CE7F /* Schedule.Urfu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5DB197A22CB7CA50062CE7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Sergey;
+				TargetAttributes = {
+					A5477C8F22D4A1F800BF7E53 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A5C3808422CFB2D200AE5AB2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5DB198122CB7CA50062CE7F;
+					};
+					A5C3809222CFB9A100AE5AB2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5DB198122CB7CA50062CE7F;
+					};
+					A5C380A022CFBC5900AE5AB2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5DB198122CB7CA50062CE7F;
+					};
+					A5DB198122CB7CA50062CE7F = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A5DB197D22CB7CA50062CE7F /* Build configuration list for PBXProject "Schedule.Urfu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5DB197922CB7CA50062CE7F;
+			productRefGroup = A5DB198322CB7CA50062CE7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5DB198122CB7CA50062CE7F /* Schedule.Urfu */,
+				A5C3808422CFB2D200AE5AB2 /* Schedule.Urfu.Tests */,
+				A5C3809222CFB9A100AE5AB2 /* Schedule.UrfuTests */,
+				A5C380A022CFBC5900AE5AB2 /* Schedule.UrfuUITests */,
+				A5477C8F22D4A1F800BF7E53 /* Schedule.Urfu.Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5477C8E22D4A1F800BF7E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5477C9822D4A1F800BF7E53 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3808322CFB2D200AE5AB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3809122CFB9A100AE5AB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3809F22CFBC5900AE5AB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB198022CB7CA50062CE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DB199022CB7CA50062CE7F /* LaunchScreen.storyboard in Resources */,
+				A5DB198D22CB7CA50062CE7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AE079DD214F6DB1619F7D0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schedule.Urfu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24221625C73BD2C06AF8BCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ScrollableDatepicker/ScrollableDatepicker.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableDatepicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Schedule.Urfu/Pods-Schedule.Urfu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5477C8C22D4A1F800BF7E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5477C9522D4A1F800BF7E53 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3808122CFB2D200AE5AB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C3808822CFB2D300AE5AB2 /* Schedule_Urfu_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3808F22CFB9A100AE5AB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C3809D22CFBC5900AE5AB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C380A422CFBC5900AE5AB2 /* Schedule_UrfuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB197E22CB7CA50062CE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DB19B522CB94C20062CE7F /* Schedule+CoreDataClass.swift in Sources */,
+				A5DB19AE22CB91CE0062CE7F /* UserDefaultsExtension.swift in Sources */,
+				A5DB19E622CF39D70062CE7F /* GroupsCoreDataService.swift in Sources */,
+				A5DB19DB22CCE9390062CE7F /* NetworkError.swift in Sources */,
+				A5DB19B222CB94340062CE7F /* SchedulesNetworkService.swift in Sources */,
+				A5DB19DD22CD1BC20062CE7F /* ScheduleData.swift in Sources */,
+				A5DB19CC22CC904E0062CE7F /* LoginCell.swift in Sources */,
+				A597898C22D3635000163396 /* GroupCell.swift in Sources */,
+				A5DB19D022CC90620062CE7F /* ScheduleCell.swift in Sources */,
+				A5DB19A522CB8BC20062CE7F /* MainNavigationController.swift in Sources */,
+				A5DB19CA22CC8B720062CE7F /* LoginController.swift in Sources */,
+				A5DB19CE22CC90590062CE7F /* PageCell.swift in Sources */,
+				A5DB19B622CB94C20062CE7F /* Schedule+CoreDataProperties.swift in Sources */,
+				A5DB19BA22CB94DB0062CE7F /* Group+CoreDataClass.swift in Sources */,
+				A5DB19C222CBA3D30062CE7F /* GroupsNetworkService.swift in Sources */,
+				A5DB19BF22CB95760062CE7F /* CoreDataStack.swift in Sources */,
+				A5DB19D222CCD7EB0062CE7F /* Page.swift in Sources */,
+				A5DB19E322CF38990062CE7F /* GroupData.swift in Sources */,
+				A5DB19C422CC87400062CE7F /* GroupsController.swift in Sources */,
+				A5DB19D622CCD8020062CE7F /* Reachability.swift in Sources */,
+				A5DB198622CB7CA50062CE7F /* AppDelegate.swift in Sources */,
+				A5DB19D522CCD8020062CE7F /* AnchorExtension.swift in Sources */,
+				A5DB19B922CB94DB0062CE7F /* Group+CoreDataProperties.swift in Sources */,
+				A5DB19E122CF33590062CE7F /* SchedulesCoreDataService.swift in Sources */,
+				A5DB19A722CB8D280062CE7F /* SchedulesController.swift in Sources */,
+				A5DB19C022CB95760062CE7F /* Schedule.Urfu.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5477C9B22D4A1F800BF7E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5477C8F22D4A1F800BF7E53 /* Schedule.Urfu.Widget */;
+			targetProxy = A5477C9A22D4A1F800BF7E53 /* PBXContainerItemProxy */;
+		};
+		A5C3808B22CFB2D300AE5AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DB198122CB7CA50062CE7F /* Schedule.Urfu */;
+			targetProxy = A5C3808A22CFB2D300AE5AB2 /* PBXContainerItemProxy */;
+		};
+		A5C3809922CFB9A100AE5AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DB198122CB7CA50062CE7F /* Schedule.Urfu */;
+			targetProxy = A5C3809822CFB9A100AE5AB2 /* PBXContainerItemProxy */;
+		};
+		A5C380A722CFBC5900AE5AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DB198122CB7CA50062CE7F /* Schedule.Urfu */;
+			targetProxy = A5C380A622CFBC5900AE5AB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5477C9622D4A1F800BF7E53 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5477C9722D4A1F800BF7E53 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		A5DB198E22CB7CA50062CE7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5DB198F22CB7CA50062CE7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5477C9D22D4A1F800BF7E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Schedule.Urfu.Widget/Schedule.Urfu.Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.Urfu.Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-Urfu.Schedule-Urfu-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5477C9E22D4A1F800BF7E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Schedule.Urfu.Widget/Schedule.Urfu.Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.Urfu.Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-Urfu.Schedule-Urfu-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5C3808C22CFB2D300AE5AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.Urfu.Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-Urfu-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schedule.Urfu.app/Schedule.Urfu";
+			};
+			name = Debug;
+		};
+		A5C3808D22CFB2D300AE5AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.Urfu.Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-Urfu-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schedule.Urfu.app/Schedule.Urfu";
+			};
+			name = Release;
+		};
+		A5C3809B22CFB9A100AE5AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.UrfuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-UrfuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schedule.Urfu.app/Schedule.Urfu";
+			};
+			name = Debug;
+		};
+		A5C3809C22CFB9A100AE5AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.UrfuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-UrfuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schedule.Urfu.app/Schedule.Urfu";
+			};
+			name = Release;
+		};
+		A5C380A922CFBC5900AE5AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.UrfuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-UrfuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Schedule.Urfu;
+			};
+			name = Debug;
+		};
+		A5C380AA22CFBC5900AE5AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = Schedule.UrfuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-UrfuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Schedule.Urfu;
+			};
+			name = Release;
+		};
+		A5DB199222CB7CA50062CE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5DB199322CB7CA50062CE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5DB199522CB7CA50062CE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731A6D1D0A171467FDF00E4A /* Pods-Schedule.Urfu.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Schedule.Urfu/Schedule.Urfu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = "$(SRCROOT)/Schedule.Urfu/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-Urfu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A5DB199622CB7CA50062CE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF08E6DD2FA27623B4A7220B /* Pods-Schedule.Urfu.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Schedule.Urfu/Schedule.Urfu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQJ9NTT9DK;
+				INFOPLIST_FILE = "$(SRCROOT)/Schedule.Urfu/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Malyshkin.Schedule-Urfu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5477C9F22D4A1F800BF7E53 /* Build configuration list for PBXNativeTarget "Schedule.Urfu.Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5477C9D22D4A1F800BF7E53 /* Debug */,
+				A5477C9E22D4A1F800BF7E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C3808E22CFB2D300AE5AB2 /* Build configuration list for PBXNativeTarget "Schedule.Urfu.Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C3808C22CFB2D300AE5AB2 /* Debug */,
+				A5C3808D22CFB2D300AE5AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C3809A22CFB9A100AE5AB2 /* Build configuration list for PBXNativeTarget "Schedule.UrfuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C3809B22CFB9A100AE5AB2 /* Debug */,
+				A5C3809C22CFB9A100AE5AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C380A822CFBC5900AE5AB2 /* Build configuration list for PBXNativeTarget "Schedule.UrfuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C380A922CFBC5900AE5AB2 /* Debug */,
+				A5C380AA22CFBC5900AE5AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DB197D22CB7CA50062CE7F /* Build configuration list for PBXProject "Schedule.Urfu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DB199222CB7CA50062CE7F /* Debug */,
+				A5DB199322CB7CA50062CE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DB199422CB7CA50062CE7F /* Build configuration list for PBXNativeTarget "Schedule.Urfu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DB199522CB7CA50062CE7F /* Debug */,
+				A5DB199622CB7CA50062CE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5DB19BD22CB95760062CE7F /* Schedule.Urfu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5DB19BE22CB95760062CE7F /* Model.xcdatamodel */,
+			);
+			currentVersion = A5DB19BE22CB95760062CE7F /* Model.xcdatamodel */;
+			path = Schedule.Urfu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5DB197A22CB7CA50062CE7F /* Project object */;
+}
